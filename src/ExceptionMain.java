@@ -15,15 +15,14 @@ public class ExceptionMain {
                 int age = rnd.nextInt(20, 126);
 
                 //条件分岐
-                if (age < 65) {
+                if (age < 65){
                     System.out.println(age + "歳、年金納付者です。");
-                } else if (age < 119){
-                        System.out.println(age + "歳、年金受給者です。");
-                    } else {
-                        //例外処理
-                        throw new RuntimeException();
-                    }
+                } else if (age < 119) {
+                    System.out.println(age + "歳、年金受給者です。");
+                } else {
+                    throw new RuntimeException();
                 }
+            }
 
         } catch (RuntimeException e) {
             System.out.println("入力値が不正です。");
