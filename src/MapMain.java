@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MapMain {
     public static void main(String[] args) {
@@ -15,13 +12,16 @@ public class MapMain {
         chocolateMap.put("日本産", "メリーチョコレート");
 
         //keyのList化
-        List<String> choList1 = new ArrayList<>(chocolateMap.keySet());
-        System.out.println(choList1);
+        List<String> chocolateList1 = new ArrayList<>(chocolateMap.keySet());
+        System.out.println(chocolateList1);
 
         //valueのList化
-        List<String> choList2 = new ArrayList<>(chocolateMap.values());
-        System.out.println(choList2);
+        List<String> chocolateList2 = new ArrayList<>(chocolateMap.values());
+        System.out.println(chocolateList2);
 
+        //key、valueのリスト化
+        List<Object> chocolateList3 = new ArrayList<>(chocolateMap.entrySet());
+        System.out.println(chocolateList3);
 
     }
 }
